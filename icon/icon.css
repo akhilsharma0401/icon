@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(176, 149, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two{
+    width: 600px;
+    height: 500px;
+    background-color: rgb(60, 102, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.two input{
+    width: 212px;
+    height: 212px;
+    opacity: 0;
+    z-index: 6;
+    position: absolute;
+}
+
+.two i{
+    font-size: 80px;
+}
+
+.two .home i{
+ font-size: 180px;
+}
+
+.two .home{
+    position: absolute;
+    top: 10rem;
+    left: 12rem;
+}
+
+.two .snap{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition-property: top left;
+    transition-duration: 0.5s;
+}
+   
+.two .insta{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition-property: top right;
+    transition-duration: 0.5s;
+}
+
+.two .face{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transition-property: bottom left;
+    transition-duration: 0.5s;
+}
+
+.two .twit{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition-property: bottom right;
+    transition-duration: 0.5s;
+}
+
+.two input:checked + .three .snap{
+    top: 12rem;
+    left:15rem;
+}
+
+.two input:checked + .three .insta{
+    top: 12rem;
+    right:16rem;
+}
+
+.two input:checked + .three .face{
+    bottom: 13.5rem;
+    left:15rem;
+}
+
+.two input:checked + .three .twit{
+    bottom: 13rem;
+    right:15rem;
+}
